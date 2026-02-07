@@ -14,7 +14,21 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Ductulator",
-  description: "HVAC duct sizing, velocity, and friction calculator",
+  description: "HVAC duct sizing, velocity, friction, and run loss calculator",
+
+  openGraph: {
+    title: "Ductulator",
+    description:
+      "HVAC duct sizing, velocity, friction, and run loss calculator",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    title: "Ductulator",
+    description:
+      "HVAC duct sizing, velocity, friction, and run loss calculator",
+  },
 };
 
 export default function RootLayout({
