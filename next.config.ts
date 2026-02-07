@@ -6,7 +6,7 @@ const withPWAInit: any = require("next-pwa");
 
 const withPWA = withPWAInit({
   dest: "public",
-  disable: true,
+  disable: disable: process.env.NODE_ENV === "development",
 });
 
 const nextConfig: NextConfig = {
